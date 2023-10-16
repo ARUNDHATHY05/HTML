@@ -1,0 +1,47 @@
+<html>
+	<head>
+	<title>TABLES</title>
+	</head>
+	
+	<script type="text/javascript">
+		 function Show()
+		 {
+		 var name=document.getElementById("N1").value;
+		 var cnum=document.getElementById("C1").value;
+		 var add=document.getElementById("A1").value;
+		 document.write("NAME: "+name);
+		 document.write("CONTACT NUMBER: "+cnum);
+		 document.write("ADDRESS: "+add);
+		 }
+	  function Reset()
+	  {
+	  document.getElementById("info").reset;
+	  }
+	  </script>
+	   <body style='background-color:green'>
+         <center>
+           <h1>MA COLLEGE OF ENGINEERING</h1>
+              <table border="2">
+      <form id="info" onsubmit="return ver()">
+	<tr>
+      <th>NAME</th>
+      <td><input type="text" name="name" id="N1"></td>
+      </tr> 
+		<tr>
+		    <th>CONTACT NUMBER</th>
+		    <td><input type="text" name="number" id="C1"></td>
+		    </tr>
+		<tr>
+         <th>ADDRESS</th>
+         <td><textarea type="text" name="address" id="A1"></textarea></td>
+         </tr>
+	 <tr>
+           		        <th colspan='2' align="center"><input type="submit" name="button" value="OK" onClick="Show()">
+                                               <input type="reset" name="button" value="CANCEL" onClick="Reset()">
+                               </th>
+                                   </tr>
+           </table>
+                  </form>
+            </body>
+    </center>
+</html>

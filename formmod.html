@@ -1,0 +1,181 @@
+<html>
+   <head>
+      <title>FORMS</title>
+   <head>
+   <script type="text/javascript">
+   function Show()
+     {
+       if(document.forms.F1.N1.value=="")
+       {
+        alert("PLEASE ENTER YOUR NAME!!!");  
+       }
+       if(document.forms.F1.G1.value=="")
+       {
+       alert("PLEASE ENTER YOUR GENDER!!!");
+       }
+       if(document.forms.F1.D1.value=="")
+       {
+       alert("PLEASE ENTER YOUR DATE OF BIRTH!!!");
+       }
+       if(document.forms.F1.ad.value=="")
+       {
+       alert("PLEASE ENTER YOUR ADDRESS!!!");
+       }
+       if(document.forms.F1.no.value=="")
+       {
+       alert("PLEASE ENTER YOUR CONTACT NUMBER!!!");
+       }
+       if(document.forms.F1.p1.value=="")
+       {
+       alert("PLEASE ENTER THE DETAILS OF YOUR PARENTS!!!");
+       }
+       if(document.forms.F1.h1.value=="")
+       {
+       alert("PLEASE ENTER YOUR HOBBIES!!!");
+       }
+       if(document.forms.F1.x1.value=="")
+       {
+       alert("PLEASE ENTER YOUR EXTRA CURRICULAR ACTIVITIES!!!");
+       } 
+       if(document.forms.F1.DIS.value=="")
+       {
+       alert("PLEASE ENTER YOUR DISTRICT!!!");
+       }  
+       if(document.forms.F1.b1.value=="")
+       {
+       alert("PLEASE CHOOSE THE CORRECT OPTION!!!");
+       } 
+       if(document.forms.l1.b1.value=="")
+       {
+       alert("PLEASE CHOOSE YOUR DISTRICT!!!");
+       } 
+      }
+         function Reset()
+          {
+          document.getElementById("F1").reset();
+          }
+         </script>
+	<body style='background-color:teal'>
+		    
+	  <center>
+	  <h1 style="color:white;"><u>MAR ATHANASIUS COLLEGE OF ENGINEERING,KOTHAMANGALAM</u></h1>
+	  <br>
+	  <br>
+	  <marquee heigh:"200px" direction:"left">MAR ATHANASIUS COLLEGE OF ENGINEERING,KOTHAMANGALAM</marquee>
+	  <br>
+	<h2>REGISTRATION FORM</h2>
+	<br>
+	<marquee heigh:"200px" direction:"left">MAR ATHANASIUS COLLEGE OF ENGINEERING,KOTHAMANGALAM</marquee>
+     <br>
+     <br>
+     <br>
+        <form id="F1" onsubmit="return Show()">
+        <table border="4" bgcolor="white" bordercolor="green">
+        <tr>
+        <th>STUDENT DETAILS</th>
+        <th>ENTER DETAILS</th>
+        </tr>
+      <tr>
+      <th>NAME</th>
+      <td><input type="text" name="name" id="N1"></td>
+      </tr> 
+          <tr>
+              <th>GENDER</th>
+              <td><input type="radio" name="radio" value="female" id="G1">FEMALE
+                  <input type="radio" name="radio" value="transgender" id="G1">TRANSGENDER
+                  <input type="radio" name="radio" value="male" id="G1">MALE
+                  </td>
+              </tr>
+              <tr>
+              <th>DATE OF BIRTH</th>
+              <td><input type="date" name="calender" id="D1"></td>
+              </tr>
+         <tr>
+         <th>ADDRESS</th>
+         <td><textarea type="text" name="address" id="ad" row="10" cols="50"></textarea></td>
+         </tr>
+		  <tr>
+		    <th>CONTACT NUMBER</th>
+		    <td><input type="text" name="number" id="no" pattern="[1-9]{1}[0-9]{9}"></td>
+		    </tr>
+		    <tr>
+		    <th>NAME OF PARENTS</th>
+		    <td>MOTHER<input type="text" name="name" id="p1"><br><br>
+		    CONTACT NUMBER<input type="tel" name="number" id="p1" pattern="[1-9]{1}[0-9]{9}"><br><br>
+		    FATHER<input type="text" name="name" id="p1"><br><br>
+		  CONTACT NUMBER<input type="tel" name="number" id="p1" pattern="[1-9]{1}[0-9]{9}"></td>
+		</tr>
+			<tr>
+			<th>HOBBIES</th>
+			<td><input type="text" name="name" id="h1"><br>
+			</td>
+			</tr>
+				<tr>
+				<th>EXTRA CURRICULAR ACTIVITIES</th>
+				<td><input type="checkbox" name="checkbox1" value="m" id="x1">MUSIC
+           		    <input type="checkbox" name="checkbox1" value="d" id="x1">DANCE
+           		    <input type="checkbox" name="checkbox1" value="s" id="x1">SPORTS
+           		    <input type="checkbox" name="checkbox1" value="a" id="x1">ACTING
+           		    <input type="checkbox" name="checkbox1" value="s1" id="x1">SWIMMING
+           		    </td>
+           		    </tr>
+			
+
+         <tr>
+         <th><label>DISTRICT</label>         
+         <td>
+         <select id="DIS">
+             <option>ERNAKULAM</option>
+             <option>THRISSUR</option>
+             <option>KASARGOD</option>
+              <option>KOLLAM</option>
+               <option>KANNUR</option>
+                <option>WAYANAD</option>
+                 <option>THIRUVANANTHAPURAM</option>
+                  <option>PATHANAMTHITTA</option>
+                   <option>MALAPPURAM</option>
+                    <option>KOZHIKODE</option>
+                     <option>IDUKKI</option>
+                      <option>KOTTAYAM</option>
+                       <option>PALAKKAD</option>
+                        <option>ALAPPUZHA</option>
+      </select>
+      </th>
+             </td>
+         </tr>
+           
+             
+                <tr>
+                <th>YEAR OF PASSING(LAST STUDIED COURSE)</th>
+                <td><input type="text" name="yop" id="Y1"></td>
+                </tr>
+                   <tr>
+                   <th>ANY BACKLOGS?</th>
+                   <td><input type="radio" name="radio" value="yes" id="b1">YES
+                       <input type="radio" name="radio" valu="no" id="b1">NO
+                   </td>
+                   </tr>
+                       <tr>
+                       <th>LANGUAGES KNOWN</th>
+                       <td><input type="checkbox" name="checkbox" value="lan1" id="l1">MALAYALAM
+           		    <input type="checkbox" name="checkbox" value="lan2" id="l1">ENGLISH
+           		    <input type="checkbox" name="checkbox" value="lan3" id="l1">TAMIL
+           		    <input type="checkbox" name="checkbox" value="lan4" id="l1">HINDI
+           		    </td>
+           		    </tr>
+           		  
+           		        <tr>
+           		        <th colspan='2' align="center"><input type="submit" name="button" value="OK" onClick="Show()">
+                                               <input type="reset" name="button" value="CANCEL" onClick="Reset()">
+                               </th>
+                                   </tr>
+                                         
+                                         
+
+           		    </table>
+           		    </form>
+</body>
+</center>
+</html>
+	  
+            
